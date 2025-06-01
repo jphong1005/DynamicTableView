@@ -22,11 +22,17 @@ class ViewController: UIViewController {
         
         "Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации \"Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст..\" Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам \"lorem ipsum\" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).",
         
-        "Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet."
+        "Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet.",
     ]
     
-    
-    @IBOutlet weak var myTableView: UITableView!
+    lazy var myTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(MyTableViewCell.self, forCellReuseIdentifier: MyTableViewCell.reuseIdentifier)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 300
+        return tableView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +43,17 @@ class ViewController: UIViewController {
         
         myTableView.dataSource = self
         
-        //  Cell 리소스 로드
-        let myTableViewCellNib = UINib(nibName: String(describing: MyTableViewCell.self), bundle: nil)
+        view.backgroundColor = .systemBackground
+        view.addSubview(myTableView)
         
-        //  Cell에 리소스 등록
-        myTableView.register(myTableViewCellNib, forCellReuseIdentifier: MyTableViewCell.reuseIdentifier)
-        
-        //  TableView의 높이를 동적(자동)으로 계산
-        myTableView.rowHeight = UITableView.automaticDimension
-        
-        //  예상하는 높이 설정
-        myTableView.estimatedRowHeight = 120
+        NSLayoutConstraint.activate([
+            myTableView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            myTableView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
+            myTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            myTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            myTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            myTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
     }
     
     
@@ -69,4 +75,12 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+#Preview(body: {
+    ViewController()
+})
+#endif
 
