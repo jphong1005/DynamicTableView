@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9333375C2DEEDA290079E05A /* MyCollectionViewFlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333375B2DEEDA290079E05A /* MyCollectionViewFlowLayoutCell.swift */; };
+		9333375E2DEF18BA0079E05A /* CollectionViewFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333375D2DEF18BA0079E05A /* CollectionViewFrameViewController.swift */; };
+		935749D52DF2F7B900C3FE05 /* CollectionViewAutoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935749D42DF2F7B900C3FE05 /* CollectionViewAutoLayoutViewController.swift */; };
+		939239E62DED824400FD2B51 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939239E52DED824400FD2B51 /* MainViewController.swift */; };
+		939239E82DED86A900FD2B51 /* MyCollectionViewFlowLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939239E72DED86A900FD2B51 /* MyCollectionViewFlowLayoutController.swift */; };
+		939239EA2DED87BF00FD2B51 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939239E92DED87BF00FD2B51 /* Coordinator.swift */; };
 		93EF946F2DE9C25100F9BB4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF94652DE9C25100F9BB4C /* AppDelegate.swift */; };
 		93EF94702DE9C25100F9BB4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF946C2DE9C25100F9BB4C /* SceneDelegate.swift */; };
-		93EF94712DE9C25100F9BB4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF946D2DE9C25100F9BB4C /* ViewController.swift */; };
+		93EF94712DE9C25100F9BB4C /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF946D2DE9C25100F9BB4C /* MyTableViewController.swift */; };
 		93EF94722DE9C25100F9BB4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93EF94662DE9C25100F9BB4C /* Assets.xcassets */; };
 		93EF94742DE9C25100F9BB4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93EF94692DE9C25100F9BB4C /* LaunchScreen.storyboard */; };
 		93EF94792DE9CBB400F9BB4C /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EF94782DE9CBB400F9BB4C /* MyTableViewCell.swift */; };
+		93FB5D0A2DF956BD000B3D3B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5D092DF956BD000B3D3B /* UIColor+.swift */; };
+		93FB5D0C2DF95B6B000B3D3B /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5D0B2DF95B6B000B3D3B /* CollectionReusableView.swift */; };
+		93FB5D0E2DF96C41000B3D3B /* MyCollectionViewCompositionalLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5D0D2DF96C41000B3D3B /* MyCollectionViewCompositionalLayoutCell.swift */; };
+		93FB5D122DF96DAD000B3D3B /* MyCollectionViewCompositionalLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FB5D112DF96DAD000B3D3B /* MyCollectionViewCompositionalLayoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9333375B2DEEDA290079E05A /* MyCollectionViewFlowLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayoutCell.swift; sourceTree = "<group>"; };
+		9333375D2DEF18BA0079E05A /* CollectionViewFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFrameViewController.swift; sourceTree = "<group>"; };
+		935749D42DF2F7B900C3FE05 /* CollectionViewAutoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewAutoLayoutViewController.swift; sourceTree = "<group>"; };
+		939239E52DED824400FD2B51 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		939239E72DED86A900FD2B51 /* MyCollectionViewFlowLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayoutController.swift; sourceTree = "<group>"; };
+		939239E92DED87BF00FD2B51 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		93EF944D2DE9C23000F9BB4C /* DynamicTableViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicTableViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93EF94652DE9C25100F9BB4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93EF94662DE9C25100F9BB4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93EF94672DE9C25100F9BB4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93EF94682DE9C25100F9BB4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93EF946C2DE9C25100F9BB4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93EF946D2DE9C25100F9BB4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93EF946D2DE9C25100F9BB4C /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		93EF94782DE9CBB400F9BB4C /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		93FB5D092DF956BD000B3D3B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		93FB5D0B2DF95B6B000B3D3B /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		93FB5D0D2DF96C41000B3D3B /* MyCollectionViewCompositionalLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCompositionalLayoutCell.swift; sourceTree = "<group>"; };
+		93FB5D112DF96DAD000B3D3B /* MyCollectionViewCompositionalLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCompositionalLayoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9371FB6B2DF58AF7004A04FB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				93EF94782DE9CBB400F9BB4C /* MyTableViewCell.swift */,
+				93EF946D2DE9C25100F9BB4C /* MyTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		9371FB6C2DF58B2A004A04FB /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				93FB5D0F2DF96D7F000B3D3B /* Flow */,
+				93FB5D102DF96D92000B3D3B /* Compositional */,
+				93FB5D0B2DF95B6B000B3D3B /* CollectionReusableView.swift */,
+				93FB5D092DF956BD000B3D3B /* UIColor+.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9371FB6D2DF58B68004A04FB /* Test_CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9333375D2DEF18BA0079E05A /* CollectionViewFrameViewController.swift */,
+				935749D42DF2F7B900C3FE05 /* CollectionViewAutoLayoutViewController.swift */,
+			);
+			path = Test_CollectionView;
+			sourceTree = "<group>";
+		};
 		93EF94442DE9C23000F9BB4C = {
 			isa = PBXGroup;
 			children = (
@@ -57,14 +106,35 @@
 			isa = PBXGroup;
 			children = (
 				93EF94652DE9C25100F9BB4C /* AppDelegate.swift */,
-				93EF94662DE9C25100F9BB4C /* Assets.xcassets */,
-				93EF94672DE9C25100F9BB4C /* Info.plist */,
-				93EF94692DE9C25100F9BB4C /* LaunchScreen.storyboard */,
 				93EF946C2DE9C25100F9BB4C /* SceneDelegate.swift */,
-				93EF946D2DE9C25100F9BB4C /* ViewController.swift */,
-				93EF94782DE9CBB400F9BB4C /* MyTableViewCell.swift */,
+				939239E92DED87BF00FD2B51 /* Coordinator.swift */,
+				939239E52DED824400FD2B51 /* MainViewController.swift */,
+				9371FB6B2DF58AF7004A04FB /* TableView */,
+				9371FB6C2DF58B2A004A04FB /* CollectionView */,
+				93EF94662DE9C25100F9BB4C /* Assets.xcassets */,
+				93EF94692DE9C25100F9BB4C /* LaunchScreen.storyboard */,
+				93EF94672DE9C25100F9BB4C /* Info.plist */,
+				9371FB6D2DF58B68004A04FB /* Test_CollectionView */,
 			);
 			path = DynamicTableViewProject;
+			sourceTree = "<group>";
+		};
+		93FB5D0F2DF96D7F000B3D3B /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9333375B2DEEDA290079E05A /* MyCollectionViewFlowLayoutCell.swift */,
+				939239E72DED86A900FD2B51 /* MyCollectionViewFlowLayoutController.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		93FB5D102DF96D92000B3D3B /* Compositional */ = {
+			isa = PBXGroup;
+			children = (
+				93FB5D0D2DF96C41000B3D3B /* MyCollectionViewCompositionalLayoutCell.swift */,
+				93FB5D112DF96DAD000B3D3B /* MyCollectionViewCompositionalLayoutViewController.swift */,
+			);
+			path = Compositional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +211,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				93EF946F2DE9C25100F9BB4C /* AppDelegate.swift in Sources */,
+				939239E62DED824400FD2B51 /* MainViewController.swift in Sources */,
+				9333375C2DEEDA290079E05A /* MyCollectionViewFlowLayoutCell.swift in Sources */,
+				939239E82DED86A900FD2B51 /* MyCollectionViewFlowLayoutController.swift in Sources */,
+				93FB5D122DF96DAD000B3D3B /* MyCollectionViewCompositionalLayoutViewController.swift in Sources */,
+				93FB5D0A2DF956BD000B3D3B /* UIColor+.swift in Sources */,
+				935749D52DF2F7B900C3FE05 /* CollectionViewAutoLayoutViewController.swift in Sources */,
 				93EF94792DE9CBB400F9BB4C /* MyTableViewCell.swift in Sources */,
 				93EF94702DE9C25100F9BB4C /* SceneDelegate.swift in Sources */,
-				93EF94712DE9C25100F9BB4C /* ViewController.swift in Sources */,
+				93FB5D0E2DF96C41000B3D3B /* MyCollectionViewCompositionalLayoutCell.swift in Sources */,
+				93EF94712DE9C25100F9BB4C /* MyTableViewController.swift in Sources */,
+				93FB5D0C2DF95B6B000B3D3B /* CollectionReusableView.swift in Sources */,
+				9333375E2DEF18BA0079E05A /* CollectionViewFrameViewController.swift in Sources */,
+				939239EA2DED87BF00FD2B51 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

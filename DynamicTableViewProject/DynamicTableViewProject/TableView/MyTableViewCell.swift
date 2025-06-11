@@ -9,7 +9,7 @@ import UIKit
 
 class MyTableViewCell: UITableViewCell {
 
-    static let reuseIdentifier: String = "MyTableViewCell"
+    static let reuseIdentifier = "MyTableViewCell"
     
     lazy var profileImage: UIImageView = {
         let imageView = UIImageView()
@@ -103,6 +103,10 @@ class MyTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+}
+
+extension MyTableViewCell {
     
     private func setupUI() -> Void {
         
@@ -147,5 +151,4 @@ class MyTableViewCell: UITableViewCell {
             hStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
         ])
     }
-
 }
